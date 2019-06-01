@@ -1,0 +1,14 @@
+package de.dpunkt.resources;
+
+import javax.inject.Inject;
+import javax.ws.rs.Path;
+
+import de.dpunkt.Services.CampaignService;
+
+@Path("/organizer/campaign")
+public class CampaignResource {
+	
+	@Inject
+	private CampaignService campaignService;
+
+}

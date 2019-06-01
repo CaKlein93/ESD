@@ -1,0 +1,10 @@
+de\dpunkt\myaktion\model\Donation.class
+com\airhacks\ping\boundary\PingResource.class
+de\dpunkt\myaktion\monitor\util\DisableHostnameVerifier.class
+com\airhacks\JAXRSConfiguration.class
+de\dpunkt\myaktion\monitor\DonationListProvider$1.class
+de\dpunkt\myaktion\monitor\ws\DonationDelegator.class
+de\dpunkt\myaktion\monitor\DonationListProvider.class
+de\dpunkt\myaktion\model\DonationListMBR.class
+de\dpunkt\myaktion\monitor\MonitorWebSocket.class
+de\dpunkt\myaktion\monitor\DonationEncoder.class

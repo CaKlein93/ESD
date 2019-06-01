@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My-Aktion-Monitor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="resources/css/screen.css">
+</head>
+<body>
+
+	<script> 
+	</script>
+	<div id="container">
+		<div id="header">
+		<p>Beispielanwendung <b>My-Aktion-Monitor</b> -Workshop Java EE 8 </p>
+		</div>
+		<div id="content">
+			<form action="">
+			<label for="campaignId">Aktion-ID:</label>
+			<input id="campaignId" type="text">
+			<input value="Setzen" type="button">
+			</form>
+			<div id="output"></div>
+		</div>
+		<div id="footer">
+			<p>(C) 2013 dpunkt.verlag GmbH, MIT Lizenz </p>
+		</div>
+	</div>
+	</body>
+</html>

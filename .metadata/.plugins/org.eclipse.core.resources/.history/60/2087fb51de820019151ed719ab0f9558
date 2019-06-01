@@ -1,0 +1,32 @@
+package de.dpunkt.resources;
+
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import de.dpunkt.Donation;
+import de.dpunkt.Services.DonationService;
+
+@Path("/")
+public class DonationResource {
+	
+	@Inject
+	private DonationService donationService;
+	
+	
+	@GET
+	@Path("/organizer/donation/list/{campaignId}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Donation> getDonationList(@PathParam(value="campaignId") Long campaignId){
+		List<Donation> donations = donationService.getDonationList(campaignId);
+		donations.forEach(donation -> donation.setCampaign(null));
+		return donations;
+	}
+	
+
+}

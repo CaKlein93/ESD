@@ -1,0 +1,5 @@
+package de.dpunkt.resources;
+
+public class DonationResource {
+
+}

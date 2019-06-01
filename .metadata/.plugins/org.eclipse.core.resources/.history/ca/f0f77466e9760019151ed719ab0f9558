@@ -1,0 +1,10 @@
+package de.dpunkt;
+
+import de.dpunkt.Campaign;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+import java.io.Serializable;
+
+public class CampaignProducer {
+
+}

@@ -1,0 +1,24 @@
+# listCampaigns.xhtml
+listCampaigns.my_campaigns=My campaigns
+listCampaigns.name=Name
+listCampaigns.target_amount=Target amount
+listCampaings.donated_so_far=Donated so far
+listCampaigns.edit=Edit
+listCampaigns.list_donations=List donations
+listCampaigns.form=Form
+listCampaigns.add_campaign=Add campaign
+# editCampaign.xhtml
+editCampaign.add_new_campaign=Add a new Campaign
+editCampaign.edit_campaign=Edit campaign
+editCampaign.general=General
+editCampaign.name=Name
+editCampaign.name_of_the_campaign=Name of campaign
+editCampaign.target_amount=Target amount
+editCampaign.target_amount_validation=The target amount for the campaign must be at least 10 Euro.
+editCampaign.donation_amount=Donation amount
+editCampaign.donation_amount_validation=Donation amount must be at least 1 Euro.
+editCampaign.bank_account=Bank account
+editCampaign.iban=IBAN
+editCampaign.name_of_bank=Name of Bank
+editCampaign.save=Save
+editCampaign.cancel=Cancel

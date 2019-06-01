@@ -1,0 +1,24 @@
+package de.dpunkt.Services;
+
+
+import de.dpunkt.Campaign;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+
+import java.util.LinkedList;
+import java.util.List;
+
+@RequestScoped
+public class CampaignServiceBean implements CampaignService {
+    @Override
+    public List<Campaign> getAllCampaigns() {
+        return new LinkedList<Campaign>();
+    }
+    
+    @Inject
+    EntityManager entityManager;
+}
+
+

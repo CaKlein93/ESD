@@ -1,0 +1,11 @@
+package de.dpunkt.Services;
+
+import java.util.List;
+
+import de.dpunkt.Donation;
+
+public interface DonationService {
+	List<Donation> getDonationList(Long campaignId);
+	void addDonation(Long campaignId, Donation donation);
+
+}

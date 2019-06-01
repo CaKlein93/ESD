@@ -1,0 +1,5 @@
+package de.dpunkt.model;
+
+public class Organizer {
+
+}

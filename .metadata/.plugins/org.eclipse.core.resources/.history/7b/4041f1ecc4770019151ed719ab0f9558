@@ -1,0 +1,9 @@
+package de.dpunkt.Services;
+
+import de.dpunkt.Campaign;
+import java.util.List;
+
+public class CampaignService {
+	List<Campaign> getAllCampaigns();
+
+}

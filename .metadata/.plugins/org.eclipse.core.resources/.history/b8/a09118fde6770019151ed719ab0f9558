@@ -1,0 +1,46 @@
+package de.dpunkt;
+
+import de.dpunkt.CampaignListProducer;
+import de.dpunkt.CampaignProducer;
+import de.dpunkt.Events.Added;
+import de.dpunkt.Events.Updated;
+
+import javax.enterprise.context.*;
+import javax.enterprise.event.Event;
+import javax.enterprise.event.Observes;
+import javax.faces.bean.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+import java.io.Serializable;
+
+@ViewScoped
+@Named
+public class EditCampaignController implements Serializable {
+	
+	private static final long serialVersionUID = 2815796004558360299L;
+	
+	
+	@Inject
+	private CampaignProducer campaignProducer;
+	
+	public String doSave() {
+		if(campaignProducer.isAddMode()) {
+			campaignAddEvent.fire(campaignProducer.getSelectedCampaign());
+			
+		}else {
+			campaignUpdateEvent.fire(campaignProducer.getSelectedCampaign());
+		}
+	
+	return Pages.LIST_CAMPAIGNS;
+	}
+	public String doCancel() {
+		return Pages.LIST_CAMPAIGNS;
+}
+	@Inject @Added
+	private Event<Campaign> campaignAddEvent;
+	
+	@Inject @Updated
+	private Event<Campaign> campaignUpdateEvent;
+	
+	
+}

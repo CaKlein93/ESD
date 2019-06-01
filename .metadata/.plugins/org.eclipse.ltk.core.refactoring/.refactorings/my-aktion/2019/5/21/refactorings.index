@@ -1,0 +1,7 @@
+1558339324436	Rename resource 'ValidationMessage_de.properies'
+1558339469143	Rename resource 'ValidationMessages_de.properies'
+1558341035488	Rename package 'model'
+1558346856642	Move 'editCampaign.xhtml' to 'organizer'
+1558346878314	Move 'listCampaigns.xhtml' to 'organizer'
+1558346892454	Move 'editDonationForm.xhtml' to 'organizer'
+1558346904830	Move 'listDonations.xhtml' to 'organizer'

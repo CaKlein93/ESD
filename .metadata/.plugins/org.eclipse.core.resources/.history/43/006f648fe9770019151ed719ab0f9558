@@ -1,0 +1,5 @@
+package de.dpunkt.Services;
+
+public class DonationService {
+
+}
